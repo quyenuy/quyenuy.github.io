@@ -1,0 +1,106 @@
+    /* Phần CSS dành cho trang web */
+body {
+    margin: 0; /* Xóa bỏ khoảng cách mặc định của trình duyệt */
+    font-family: Arial, sans-serif; /* Sử dụng font chữ dễ đọc */
+}
+
+#menu_text {
+    background-color: #8998b0; /* Màu nền cho tiêu đề */
+    text-align: center; /* Căn giữa nội dung */
+    padding: 80px; /* Padding xung quanh nội dung */
+    margin: 0; /* Không có margin xung quanh */
+}
+.course_item {
+	flex: 33%;
+	text-align: center;
+    padding: 10px;      /* Padding giúp các phần tử không quá sát nhau */
+    box-sizing: border-box; /* Đảm bảo padding không làm thay đổi chiều rộng */
+}
+#anh {
+	width: 90%;
+    height: 200px;
+    object-fit: cover;
+}
+.course_title {
+	font-weight: bold;
+}
+.course_dev {
+}
+
+#container1 {
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: space-between;
+}
+/* Menu điều hướng */
+nav {
+    background-color: #e87bcb; /* Màu nền cho thanh điều hướng */
+    overflow: hidden; /* Đảm bảo rằng các phần tử bên trong không bị tràn ra ngoài */
+}
+
+nav a {
+    color: blue; /* Màu chữ của các liên kết */
+    padding: 14px 20px; /* Padding xung quanh các liên kết */
+    display: block; /* Chuyển các liên kết thành phần tử block */
+    text-align: center; /* Căn giữa văn bản trong liên kết */
+    text-decoration: none; /* Xóa bỏ gạch chân mặc định */
+}
+
+/* Khi hover vào menu */
+nav a:hover {
+    background-color: white; /* Màu nền khi hover */
+    color: black; /* Màu chữ khi hover */
+}
+
+nav a.menu_left {
+    float: left; /* Đẩy liên kết sang bên trái */
+}
+
+nav a.menu_right {
+    float: right; /* Đẩy liên kết sang bên phải */
+}
+
+/* Các phần tử bên trái và phải */
+#flex_container {
+    display: flex; /* Sử dụng Flexbox để bố trí các phần tử */
+    flex-wrap: nowrap; /* Bao bọc các phần tử lại khi màn hình nhỏ */
+}
+
+#left_side {
+    flex: 30%; /* Phần trái chiếm 30% chiều rộng */
+    background-color: #f1f1f1; /* Màu nền cho phần trái */
+    padding: 10px 20px; /* Padding xung quanh phần trái */
+}
+
+#right_side {
+    flex: 70%; /* Phần phải chiếm 70% chiều rộng */
+    padding: 10px 20px; /* Padding xung quanh phần phải */
+}
+.course_item {
+  width: 33%;
+  float: left; 
+  text-align: center;
+}
+
+/* Phần footer */
+footer {
+    background-color: #e87bcb; /* Màu nền cho footer */
+    color: blue; /* Màu chữ trong footer */
+    padding: 10px 20px; /* Padding xung quanh footer */
+    text-align: center; /* Căn giữa nội dung trong footer */
+    width: 100%; /* Đảm bảo footer chiếm toàn bộ chiều rộng */
+    box-sizing: border-box; /* Đảm bảo padding không làm chiều rộng bị lệch */
+}
+
+
+/* Điều chỉnh layout cho các thiết bị có màn hình nhỏ */
+@media (max-width: 800px) {
+    #left_side, #right_side {
+        flex: 100%; /* Các phần tử này chiếm 100% chiều rộng màn hình trên thiết bị nhỏ */
+    }
+
+    #flex_container {
+        flex-wrap: wrap; /* Bao bọc các phần tử lại khi màn hình nhỏ */
+    }
+}
+
