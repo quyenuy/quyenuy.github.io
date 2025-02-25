@@ -1,0 +1,125 @@
+<!DOCTYPE html> <!-- Khai báo loại tài liệu HTML, giúp trình duyệt hiểu đây là một trang HTML5 -->
+<html lang="en"> <!-- Bắt đầu trang HTML, chỉ định ngôn ngữ là tiếng Anh -->
+<head>
+    <meta charset="utf-8"> <!-- Xác định bộ ký tự sử dụng là UTF-8, hỗ trợ đa ngôn ngữ -->
+    <meta name="description" content="My resume website" /> <!-- Mô tả ngắn về trang web -->
+    <meta name="author" content="Uy Nguyen" /> <!-- Tên tác giả trang web -->
+    <meta name="country" content="Vietnam" /> <!-- Xác định quốc gia của tác giả -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Thiết lập để trang web hiển thị tốt trên các thiết bị di động -->
+    <link rel="stylesheet" href="css/10.css"> <!-- Liên kết đến tệp CSS để định dạng trang -->
+    <title>Uy Nguyen Resume</title> <!-- Tiêu đề trang web hiển thị trên tab trình duyệt -->
+</head>
+<body>
+    <h1 id="menu_text">My Resume</h1> <!-- Tiêu đề lớn của trang, thể hiện tên của trang web -->
+
+    <!-- Menu điều hướng -->
+    <nav> <!-- Thẻ <nav> dùng để nhóm các liên kết điều hướng trong trang -->
+        <a href="#contact" class="menu_left">About</a> <!-- Liên kết đến phần "About" trên trang, class "menu_left" để căn trái -->
+        <a href="#education" class="menu_left">Education</a> <!-- Liên kết đến phần "Education" trên trang -->
+        <a href="#score" class="menu_left">Score</a> <!-- Liên kết đến phần "Score" trên trang -->
+        <a href="#social" class="menu_right">Social Media</a> <!-- Liên kết đến phần "Social Media" trên trang, class "menu_right" để căn phải -->
+    </nav>
+
+    <!-- Flex container cho nội dung bên trái và bên phải -->
+    <div id="flex_container"> <!-- Chứa các phần tử bên trái và bên phải trong một layout flex -->
+        <div id="left_side"> <!-- Nội dung phía bên trái của trang, như thông tin cá nhân -->
+            <img src="img_2499.jpeg" alt="my photo" width="100" height="100"> <!-- Ảnh đại diện của tôi, chiều rộng và chiều cao được chỉ định -->
+            <h2 id="contact">About me</h2> <!-- Tiêu đề cho phần "About me" -->
+            <em>I am working in the information technology field</em> <!-- Thông tin miêu tả về tôi -->
+            <ul> <!-- Thẻ <ul> dùng để tạo danh sách không có thứ tự -->
+                <li><strong>Fullname:</strong> Uy Nguyen</li> <!-- Mục trong danh sách, chứa tên đầy đủ -->
+                <li><strong>Country:</strong> VietNam</li> <!-- Mục trong danh sách, chứa quốc gia -->
+            </ul>
+            <h2 id="education">Education</h2> <!-- Tiêu đề cho phần "Education" -->
+            <ol> <!-- Thẻ <ol> dùng để tạo danh sách có thứ tự -->
+                <li>Hanoi-Amsterdam Highschool</li> <!-- Mục trong danh sách có thứ tự, chứa tên trường -->
+                <li>Swinburn University</li> <!-- Mục trong danh sách có thứ tự, chứa tên trường -->
+                <li>Deakin University</li> <!-- Mục trong danh sách có thứ tự, chứa tên trường -->
+            </ol>
+        </div>
+
+        <div id="right_side"> <!-- Nội dung phía bên phải của trang, như điểm số và mạng xã hội -->
+            <h2 id="score">Score</h2> <!-- Tiêu đề cho phần "Score" -->
+            <table border="1"> <!-- Thẻ <table> dùng để tạo bảng, với border 1px -->
+                <tr> <!-- Thẻ <tr> dùng để tạo một dòng trong bảng -->
+                    <th rowspan="2"></th> <!-- Thẻ <th> tạo một ô tiêu đề trong bảng, rowspan để gộp ô trên 2 dòng -->
+                    <th colspan="2">Math</th> <!-- Gộp 2 ô tiêu đề cho môn Math -->
+                    <th rowspan="2">Physics</th> <!-- Tiêu đề cho môn Physics -->
+                    <th rowspan="2">IT</th> <!-- Tiêu đề cho môn IT -->
+                </tr>
+                <tr> <!-- Dòng tiếp theo trong bảng -->
+                    <th>Math1</th> <!-- Tiêu đề cho cột Math1 -->
+                    <th>Math2</th> <!-- Tiêu đề cho cột Math2 -->
+                </tr>
+                <tr> <!-- Dòng dữ liệu trong bảng -->
+                    <th>2019</th> <!-- Năm học -->
+                    <td>9</td> <!-- Điểm của môn Math1 -->
+                    <td>0</td> <!-- Điểm của môn Math2 -->
+                    <td>8</td> <!-- Điểm môn Physics -->
+                    <td>10</td> <!-- Điểm môn IT -->
+                </tr>
+                <tr> <!-- Dòng dữ liệu trong bảng -->
+                    <th>2020</th> <!-- Năm học -->
+                    <td>10</td> <!-- Điểm môn Math1 -->
+                    <td>0</td> <!-- Điểm môn Math2 -->
+                    <td>10</td> <!-- Điểm môn Physics -->
+                    <td>9</td> <!-- Điểm môn IT -->
+                </tr>
+                <tr> <!-- Dòng dữ liệu trong bảng -->
+                    <th>2021</th> <!-- Năm học -->
+                    <td>8</td> <!-- Điểm môn Math1 -->
+                    <td>0</td> <!-- Điểm môn Math2 -->
+                    <td>10</td> <!-- Điểm môn Physics -->
+                    <td>8</td> <!-- Điểm môn IT -->
+                </tr>
+            </table>
+            <h2 id="social">Social Media</h2> <!-- Tiêu đề cho phần "Social Media" -->
+            <div> <!-- Thẻ <div> để nhóm các phần tử bên trong -->
+                <ul> <!-- Danh sách không có thứ tự các liên kết đến mạng xã hội -->
+                    <li><a href="https://www.youtube.com/user/Google" target="_blank">YouTube</a></li> <!-- Liên kết đến YouTube -->
+                    <li><a href="https://www.facebook.com/profile.php?id=100047178973603" target="_blank">Facebook</a></li> <!-- Liên kết đến Facebook -->
+                </ul>
+            </div>
+            <h2 id="course">Online Course</h2>
+            <div id="container1">
+                <div class="course_item"> 
+                    <img id="anh" src="avatar-anime.jpeg" alt="photo">
+                    <div class="course_title">Logic wibu</div>
+                    <div class="course_dev">Game giải đố, thường có độ khó tăng dần, có thể kết hợp với các thể loại khác</div>
+                </div>
+                <div class="course_item">
+                    <img id="anh" src="lili.jpeg">
+                    <div class="course_title">Logic messi</div>
+                    <div class="course_dev">Game giải đố, thường có độ khó tăng dần, có thể kết hợp với các thể loại khác</div>
+                </div>
+                <div class="course_item">
+                    <img id="anh" src="violet.jpeg">
+                    <div class="course_title">Logic super</div>
+                    <div class="course_dev">Chiến lược thời gian thực: người chơi hoá thân và thực hiện các nhiệm vụ xây dựng, chiến đấu trong khoảng thời gian liên tục.</div>
+                </div>
+                <div class="course_item">
+                    <img id="anh" src="quy.jpeg">
+                    <div class="course_title">Logic ricon</div>
+                    <div class="course_dev">Game mô phỏng: Người chơi thực hiện khám phá thế giới trong game mà không mang tính chiến thắng. </div>
+                </div>
+                <div class="course_item">
+                    <img id="anh" src="hinhnen.jpeg">
+                    <div class="course_title">Logic siuu</div>
+                    <div class="course_dev">Trò chơi nhập vai: người chơi hoá thân vào nhân vật để thực hiện nhiệm vụ.</div>
+                </div>
+                <div class="course_item">
+                    <img id="anh" src="nền.jpeg">
+                    <div class="course_title">Logic anime</div>
+                    <div class="course_dev">Bắn súng góc nhìn thứ nhất</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer> <!-- Thẻ <footer> chứa thông tin về bản quyền hoặc tác giả -->
+        Created by Uyhandsome sieu cap vippro - <a href="mailto:quyenuy809@gmail.com">Email me</a> <!-- Liên kết email để gửi email đến tác giả -->
+    </footer>
+
+</body>
+</html>
